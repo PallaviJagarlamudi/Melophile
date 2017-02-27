@@ -1,0 +1,71 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Melophile</string>
+
+    <!-- Category name for MyMusic [CHAR LIMIT=20] -->
+    <string name="category_myMusic">My Music</string>
+
+    <!-- Category name for Radio [CHAR LIMIT=20] -->
+    <string name="category_radio">Radio</string>
+
+    <!-- Category name for Podcast [CHAR LIMIT=20] -->
+    <string name="category_podcast">Podcast</string>
+
+    <!-- Category name for MyMusic [CHAR LIMIT=20] -->
+    <string name="category_search">Search</string>
+
+    <!-- Category name for Podcast [CHAR LIMIT=20] -->
+    <string name="category_settings">Settings</string>
+
+    <!-- List name for Album [CHAR LIMIT=20] -->
+    <string name="list_album">Albums</string>
+
+    <!-- List name  for the Playlist [CHAR LIMIT=20] -->
+    <string name="list_playlist">Playlists</string>
+
+    <!-- List name  for recently played items [CHAR LIMIT=20] -->
+    <string name="list_recent_played">Recently Played</string>
+
+    <!-- List name for Genre [CHAR LIMIT=20] -->
+    <string name="list_genre">Genre</string>
+
+    <!-- List name for All_Songs [CHAR LIMIT=20] -->
+    <string name="list_all_songs">All Songs</string>
+
+    <!-- Now Playing [CHAR LIMIT=20] -->
+    <string name="now_playing">Now Playing</string>
+
+    <!-- Functionality  of different activities [CHAR LIMIT=20] -->
+    <string name="main_screen_text">This is Main activity which has 4 button views for My Music, Podcast, Radio and settings.</string>
+    <string name="myMusic_text">This is the MyMusic activity which list out the albums,genres,recent played, All songs etc. This MyMusic activity has 4 sub-activities - All Songs, Playlist, Albums, Genre.</string>
+    <string name="podcast_text">This is the Podcast activity where we can implement Now trending, Top charts etc.\n
+       1. To get list details, we can obtain by sending HTTP request and get the xml file and parse xml file to get DOM elements using DocumentBuilder/Document builder factory \n
+       2. Using StreamMediaPlayer we can stream and using MediaPlayer API we play the music</string>
+    <string name="radio_text">This is the Radio activity where we can implement station change\n
+        1. Get the remote URL and use HTTP streaming \n
+        2. If we are trying to play an online radio stream that uses .pls, or .m3u, we would have to parse that file.\n
+        3. Using MediaPlayer API we play the music</string>
+    <string name="settings_text">This is the Settings activity which shows different types of settings user can change as per the need. This activity has no sub activities as of now. We can display AutoSearch of audio files or manual search using RadioButtonGroup. Resume playing on headset/bluetooth headset - this can be implemented using checkbox</string>
+    <string name="myMusic_all_text">This activity will list out all the songs detected.\n\n
+        We can get the audio files using Environment.getExternalStorageDirectory() path and we can file filter to get the mp3 alone.
+        Add them to ArrayList with HashMap and we can use ArrayAdapter to display in ListView
+        Using MediaPlayer API we play the music</string>
+    <string name="search_text">This is the Search activity which can be called from  MyMusic or Podcast activity. It has no sub activities. We can pass data through Bundle while calling this activity to pass indicator to identify the parent activity calling this sub activity. We use the key word in Hashset and gte the matching one and list them out using ListView</string>
+    <string name="now_playing_text"> This is the activity which displays the mediaplayer, controls to fast forward, rewind, progress bar of the audio playing</string>
+
+    <!-- Dummy song name-->
+    <string name="song_name">So Yesterday</string>
+    <string name="screen_message">The above button can be replaced with ListView and we can implement event listener on that.</string>
+    <string name="myMusic_album_text"> Album activity list out all the albums detected.\n\n
+        We can get the audio files using Environment.getExternalStorageDirectory() path and we can file filter to get the mp3 alone.
+        Add them to ArrayList with HashMap and we can use ArrayAdapter to display in ListView using audio objects Album object
+        </string>
+    <string name="myMusic_genre_text">Genre activity list out all the genres detected.\n\n
+        We can get the audio files using Environment.getExternalStorageDirectory() path and we can file filter to get the mp3 alone.
+        Add them to ArrayList with HashMap and we can use ArrayAdapter to display in ListView using audio objects Genres object
+        </string>
+    <string name="myMusic_playlist_text">Playlist activity list out all the playlists detected.\n\n
+        We can get the audio files using Environment.getExternalStorageDirectory() path and we can playlist.
+        Add them to ArrayList with HashMap and we can use ArrayAdapter to display in ListView using audio objects Playlist object
+        </string>
+</resources>

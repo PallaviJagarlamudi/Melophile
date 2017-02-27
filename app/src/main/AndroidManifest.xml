@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.melophile">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyMusicAllSongsActivity"
+            android:label="@string/list_all_songs" />
+        <activity
+            android:name=".PodcastActivity"
+            android:label="@string/category_podcast" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/category_search" />
+        <activity
+            android:name=".RadioActivity"
+            android:label="@string/category_radio" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/category_settings" />
+        <activity
+            android:name=".MyMusicPlaylistActivity"
+            android:label="@string/list_playlist" />
+        <activity
+            android:name=".MyMusicGenreActivity"
+            android:label="@string/list_genre" />
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="@string/now_playing" />
+        <activity
+            android:name=".MyMusicAlbumActivity"
+            android:label="@string/list_album" />
+        <activity android:name=".MyMusicActivity"></activity>
+    </application>
+
+</manifest>

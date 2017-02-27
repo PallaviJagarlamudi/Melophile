@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.melophile.MyMusicActivity">
+
+    <TextView
+        android:text="@string/myMusic_all_text"
+        style="@style/ItemTextStyle"
+        android:id="@+id/myMusic_text"/>
+
+    <LinearLayout
+    android:orientation="vertical"
+    style="@style/HeaderLayoutStyle"
+        android:layout_below="@+id/myMusic_text"
+    android:id="@+id/myMusic_header_layout">
+
+    <Button
+        android:text="@string/list_all_songs"
+        style="@style/MenuItemStyle"
+        android:id="@+id/myMusic_all" />
+
+    <Button
+        android:text="@string/list_album"
+        style="@style/MenuItemStyle"
+        android:id="@+id/myMusic_album"/>
+
+    <Button
+        android:text="@string/list_genre"
+        style="@style/MenuItemStyle"
+        android:id="@+id/myMusic_genre" />
+
+    <Button
+        android:text="@string/list_playlist"
+        style="@style/MenuItemStyle"
+        android:id="@+id/myMusic_playlist" />
+</LinearLayout>
+
+
+
+</RelativeLayout>
